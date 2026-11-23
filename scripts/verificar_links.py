@@ -27,7 +27,7 @@ def checar(u):
     host = urllib.parse.urlparse(u).netloc
     if any(host.endswith(d) for d in IGNORAR):
         return u, "ignorado"
-    req = urllib.request.Request(u, headers={"User-Agent": "trilha-ia-ptbr-link-check"})
+    req = urllib.request.Request(u, headers={"User-Agent": "trilha-ia-link-check"})
     for tentativa in range(1, TENTATIVAS + 1):
         try:
             with urllib.request.urlopen(req, timeout=20) as r:
