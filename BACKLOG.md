@@ -10,11 +10,11 @@
 - 2026-11-23: verificador de links com 2 conexões e retry em 429/5xx (de 32 falhas para 2, ambas falsas).
 - 2026-11-23: repositório, pasta local e User-Agent renomeados para `trilha-ia`.
 - 2026-11-23: `CONTEXT.md`, `BACKLOG.md` e `CLAUDE.md` adicionados.
+- 2026-11-23: README adaptado ao padrão global de documentação e `docs/` criado (índice e manual de verificação de links).
 
 ## Pendências abertas
 - O verificador leva cerca de 4 minutos; avaliar retry mais longo só para github.com e ritmo normal para os demais.
-- README ainda não segue o padrão global de documentação (`<h1 align="center">`, badges, Início Rápido, Estrutura do Projeto, Documentação de Apoio). Decidir se adota ou se mantém o formato atual.
-- Não existe `docs/`. Decidir se o padrão global se aplica a um repositório de curadoria.
+- Manuais em `docs/`: só existe `verificacao-de-links.md`. Novos manuais entram no índice (`docs/README.md`) e na barra de navegação.
 - Notebooks e links não foram executados nem abertos um a um; a conferência foi só de status HTTP.
 
 ## Próximos passos candidatos

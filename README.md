@@ -1,11 +1,27 @@
-# Trilha de IA em português
+<h1 align="center">Trilha de IA em português</h1>
+
+<p align="center">
+  <strong>Estudos de Inteligência Artificial em ordem, do básico a agentes e produção, com curadoria de cursos abertos de referência.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Conte%C3%BAdo-Markdown-083FA1?style=for-the-badge&logo=markdown&logoColor=white" alt="Conteúdo em Markdown" />
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-Links-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=for-the-badge" alt="Licença MIT" />
+</p>
+
+---
 
 Uma trilha de estudos de Inteligência Artificial em ordem, do básico até agentes e produção, montada a partir de cursos abertos de referência. Cada etapa linka para a fonte original, indica o idioma e avisa quando há tradução para português do Brasil.
 
+> [!NOTE]
 > **O que este repositório é:** curadoria e ordenação. Não copia nem reescreve o conteúdo dos autores.
 > **O que ele não é:** um curso novo nem uma tradução. O crédito de cada lição fica com quem a criou.
 
-## Como usar
+---
+
+## Início Rápido
 
 1. Leia [Como estudar](trilha/00-como-estudar.md).
 2. Siga os módulos na ordem da tabela abaixo.
@@ -35,11 +51,48 @@ Sete repositórios abertos sustentam a trilha. Veja detalhes, licenças e data d
 - **Sem cópia:** nenhum arquivo, notebook, imagem ou texto dos autores é copiado para cá. Só links.
 - **Sem invenção:** títulos e ordem partem da estrutura real dos repositórios. Quando uma indicação de pré-requisito aparece, ela vem do próprio material (e fica dito qual).
 - **Crédito e licença:** autores e licenças estão em [FONTES.md](FONTES.md). Um dos materiais (RAG_Techniques) tem licença de uso não comercial, e a trilha avisa isso no módulo correspondente.
-- **Links verificáveis:** existe um script e um workflow para conferir os links. Veja [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Links verificáveis:** existe um script e um workflow para conferir os links. Veja [Verificação de links](docs/verificacao-de-links.md).
 
 ## Status
 
 Versão 0.1. Os links e a estrutura foram conferidos contra os repositórios de origem em 23/11/2026. Os notebooks não foram executados durante a curadoria. Se algo quebrar, abra uma issue.
+
+---
+
+## Estrutura Padrão do Projeto
+
+Disposição das pastas e arquivos do repositório:
+
+```text
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── link-quebrado.md          # Modelo de issue para link quebrado
+│   │   └── sugerir-recurso.md        # Modelo de issue para sugerir recurso
+│   ├── workflows/
+│   │   └── links.yml                 # Verificação de links (PR, semanal e manual)
+│   └── pull_request_template.md      # Modelo de pull request
+├── docs/                             # Manuais de apoio
+│   ├── README.md                     # Índice da documentação
+│   └── verificacao-de-links.md       # Como o verificador de links funciona
+├── scripts/
+│   └── verificar_links.py            # Verificador de links (Python, sem dependências)
+├── trilha/                           # Módulos 00 a 10 da trilha de estudos
+├── BACKLOG.md                        # Pendências e estado atual (arquivo quente)
+├── CLAUDE.md                         # Regras locais para agentes de IA
+├── CONTEXT.md                        # Contexto estável do projeto para agentes
+├── CONTRIBUTING.md                   # Como contribuir
+├── FONTES.md                         # Fontes, autores, licenças e data de conferência
+├── LICENSE                           # Licença MIT do texto original
+├── README.md                         # Esta página
+└── ROADMAP.md                        # Itens planejados
+```
+
+## Documentação de Apoio
+
+- [Índice da documentação](docs/README.md)
+- [Verificação de links](docs/verificacao-de-links.md)
+- [Como contribuir](CONTRIBUTING.md)
+- [Roadmap](ROADMAP.md)
 
 ## Contribuir
 
